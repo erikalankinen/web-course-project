@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+    <title>Kanban board</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <div class="nav-wrapper">
+            <!-- Left side: Language switch button -->
+            <ul class="left">
+                <li>
+                    <button onclick="location.href='index-fi.html'" class="btn waves-effect waves-light" style="margin-left: 10px;">FI</button>
+                </li>
+            </ul>
+            <!-- Right side: Login, Register, Logout -->
+            <ul class="right">
+                <li>
+                    <!-- Login form -->
+                    <form id="loginForm" class="row" style="margin-bottom: 0;">
+                        <div class="input-field col">
+                            <input type="email" id="email" class="navbar-input" placeholder="Email" required />
+                        </div>
+                        <div class="input-field col">
+                            <input type="password" id="password" class="navbar-input" placeholder="Password" required />
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn waves-effect waves-light">Login</button>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <!-- Register button -->
+                    <div class="input-field col">
+                        <button type="button" id="register" class="btn waves-effect waves-light" style="margin-right: 10px;">Register</button>
+                    </div>
+                </li>
+                 <!-- Logout button -->
+                <li>
+                    <button type="button" id="logout" class="btn waves-effect waves-light" style="margin-right: 10px;">Logout</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="container">
+        <button id="newColumnBtn" class="btn waves-effect waves-light">Add Column</button>
+        <div id="columnForm"></div>
+        <div id="columns" class=" column-container"></div>
+    </div>
+    
+</body>
+</html>

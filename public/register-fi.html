@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/register.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+    <title>Rekisteröidy</title>
+</head>
+<body>
+    <div class="container">
+        <!-- ENG-language button -->
+        <button onclick="location.href='register.html'" class="btn waves-effect waves-light" style="margin-left: 10px;">ENG</button>
+
+        <h4>Rekisteröidy</h4>
+
+        <!-- Registration form -->
+        <form id="registerForm">
+            <div class="form-group">
+                <input type="email" id="email" required />
+                <label for="email">Sähköposti</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" required />
+                <label for="username">Käyttäjänimi</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" required />
+                <label for="password">Salasana</label>
+            </div>
+            <!-- Password requirements in Finnish -->
+            <p>Salasanassa täytyy olla ainakin:</p>
+            <p>- 8 merkkiä</p>
+            <p>- 1 pieni kirjain</p>
+            <p>- 1 iso kirjain</p>
+            <p>- 1 numero</p>
+            <p>- 1 erikoismerkki</p>
+            
+            <button class="btn waves-effect waves-light" type="submit">Rekisteröidy</button>
+        </form>
+        <!-- Error message area -->
+        <p id="error" class="red-text"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "mongoose": "^8.16.4",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "uuid": "^11.1.0"
+  },
+  "name": "project",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc-watch --onSuccess \"nodemon dist/server.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.0.15",
+    "jsonwebtoken": "^9.0.2",
+    "tsc-watch": "^7.1.1"
+  }
+}

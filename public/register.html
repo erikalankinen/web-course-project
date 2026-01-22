@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/register.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <!-- FI-language button -->
+        <button onclick="location.href='register-fi.html'" class="btn waves-effect waves-light" style="margin-left: 10px;">FI</button>
+
+        <h4>Register</h4>
+        <!-- Register form -->
+        <form id="registerForm">
+            <div class="form-group">
+                <input type="email" id="email" required />
+                <label for="email">Email</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="username" required />
+                <label for="username">Username</label>
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" required />
+                <label for="password">Password</label>
+            </div>
+            <!-- Password requirements for user to see -->
+            <p>Password must have at least:</p>
+            <p>- 8 characters</p>
+            <p>- 1 lowercase letter</p>
+            <p>- 1 uppercase letter</p>
+            <p>- 1 number</p>
+            <p>- 1 special character</p>
+           
+            <button class="btn waves-effect waves-light" type="submit">Register</button>
+        </form>
+        <!-- Error message area -->
+        <p id="error" class="red-text"></p>
+    </div>
+</body>
+</html>

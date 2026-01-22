@@ -1,0 +1,39 @@
+/* container for all columns*/
+.column-container {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    gap: 15px;
+}
+
+/*card container to stack items vertically*/
+.card {
+    display: flex;
+    flex-direction: column;
+}
+/*card styling*/
+.kanban-card {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*scrollable are for cards inside a column*/
+.card-list {
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+/*highlight when card is dragger over a drop target*/
+.kanban-card.drop-hover {
+    border: 2px dashed #1976d2;
+    background-color: #e3f2fd;
+}
+/*margin for left button in nav*/
+nav .left li:first-child button {
+    margin-left: 15px;
+}
+/*margin for right button in nav*/
+nav .right li:last-child button {
+    margin-right: 15px;
+}
+
